@@ -1,0 +1,138 @@
+/*  Gallery  */
+
+.pg-main {
+  padding-bottom: 15px;
+}
+
+.pg-container {
+	width: 100%;
+	margin: auto;
+}
+.pg-container-flex {
+	display: flex;
+  flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.pg-column {
+	width: 100%;
+}
+.pg-column-50-25 {
+  width: 49%;
+}
+
+/* Banner */
+
+.pg-banner {
+	position: relative;
+	margin-top: -150px;
+  z-index: -1;
+}
+.pg-banner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+	z-index: 1;
+	top: 0;
+}
+.pg-banner-img {
+	width: 100%;
+	height: 105vh;
+	object-fit: cover;
+}
+.pg-banner-content {
+	width: 90%;
+	color: white;
+	text-align: center;
+	position: absolute;
+	z-index: 1500;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.pg-group-title {
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	font-weight: 100;
+	font-size: 1.8em;
+	margin: 30px;
+}
+
+
+/* Gallery Content */
+
+.pg-gallery-img {
+	object-fit: cover;
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.pg-gallery-img:hover {
+	transform: scale(1.02);
+}
+.pg-gallery-img-big {
+	height: 300px;
+}
+.pg-gallery-img-small {
+	height: 150px;
+}
+.pg-modal {
+	width: 100%;
+	min-height: 100vh;
+	background: rgba(0,0,0,0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20000;
+	display: none;
+}
+.pg-modal-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.pg-modal-img {
+	width: 50%;
+	height: 70%;
+	object-fit: cover;
+}
+.pg-modal-boton {
+	position: absolute;
+	top: 10px;
+	color: white;
+	right: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background: #de423a;
+	font-size: 2.5em;
+	text-align: center;
+	border-radius: 50%;
+	font-family: monospace;
+}
+.pg-modal-open {
+	display: block;
+}
+
+@media screen and (min-width: 768px) {
+	.pg-column-50-25 {
+		width: 22%;
+	}
+  .pg-banner-content {
+		font-size: 3em;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.pg-container {
+		width: 1000px;
+	}
+}

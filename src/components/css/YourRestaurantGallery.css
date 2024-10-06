@@ -1,0 +1,564 @@
+@font-face {
+	font-family: "Pacifico";
+	src: url(./fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url(./fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+	font-family: "Montserrat";
+	font-weight: bold;
+	src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+:root {
+  --p2-font:"Montserrat", sans-serif;
+}
+
+body {
+	margin: 0;
+  overflow-x: hidden;
+}
+
+/*------------------------ Base Styles ------------------------*/
+img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+.py-container {
+	width: 100%;
+	margin: auto;
+}
+.py-container-flex {
+	display: flex;
+  flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.py-column {
+	width: 100%;
+}
+
+/*----------------------- Header Styles -----------------------*/
+.py-main-header {
+	width: 100%;
+}
+.py-logo {
+	font-size: 1.7em;
+	color: white;
+	padding: 10px;
+	font-family: 'Pacifico', cursive;
+	font-weight: 100;
+}
+.py-main-header-contactInfo-phone {
+	background: #de423a;
+	color: white;
+	margin: 0 auto;
+	padding: 10px;
+}
+.py-main-header-contactInfo-address {
+	padding: 10px;
+	margin: 0;
+}
+.py-main-header [className*="icon-"]:before {
+	position: relative;
+	top: 2px;
+	right: 5px;
+}
+
+.py-main-header-contactInfo i {
+  color: #ff736c;
+}
+
+
+/*---------------------- Menu Styles ----------------------*/
+.py-main-nav {
+  --header-height:4rem;
+	width: 100%;
+	position: sticky;
+  top:0;
+  height:cal(var(--header-heihgt) - 0.5rem);
+	z-index: 2000;
+	padding: 10px;
+}
+.py-none {
+  display: none;
+}
+.py-icon-menu {
+	display: block;
+	color: #de423a;
+  background-color: transparent;
+	border: 3px solid rgb(147, 72, 72);
+	border-radius: 3px;
+	width: 40px;
+	height: 40px;
+	line-height: 45px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 1.5em;
+  position: relative;
+}
+.py-icon-menu span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+.py-icon-menu:hover {
+  background: #ff4b4b50;
+}
+.py-social-icon {
+	display: flex;
+	justify-content: space-between;
+}
+
+.py-social-icon [class*="py-icon-"] {
+	color: #ff4c43;
+	margin-left: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.3em;
+	width: 35px;
+	height: 35px;
+	background: #ff4b4b60;
+	border-radius: 50%;
+}
+.py-social-icon [class*="py-icon-"]:hover {
+  color: #ff9d9d;
+  background: #ff9d9d90;
+  transition: all 0.3s;
+}
+.py-social-icon-link {
+	text-decoration: none;
+  position: relative;
+}
+.py-icon-facebook {
+  position: absolute;
+  top: 0;
+  left: -35%;
+}
+.py-twitter {
+  position: relative;
+  background: #ff4b4b60;
+  border-radius: 50%;
+  margin-left: 6px;
+  margin-right: -4px;
+}
+.py-twitter svg {
+  fill: #ff4c43;
+}
+.py-twitter:hover {
+  background: #ff9d9d90;
+  transition: all 0.3s;
+  svg {
+    fill: #ff9d9d;
+  }
+}
+.py-icon-mail {
+  position: absolute;
+  top: 0;
+  left: -25%;
+}
+
+.py-menu {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+  height: 0;
+	background: rgba(0,0,0,.65);
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	overflow: hidden;
+	transition: height .3s linear;
+}
+.py-menu-link {
+	display: block;
+	padding: 15px;
+	color: white;
+	text-decoration: none;
+}
+.py-menu-link:hover {
+	background: rgba(252,121,101,.4);
+}
+.py-menu-link-select {
+	background: rgba(252,121,101,.4);
+}
+.py-visible {
+	height: 35vh;
+}
+
+/*--------------------- Banner Styles ---------------------*/
+.py-banner {
+	margin-top: -55px;
+	position: relative;
+}
+.py-banner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+	z-index: 1000;
+	top: 0;
+}
+.py-banner-img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+.py-banner-content {
+	width: 90%;
+	color: white;
+	text-align: center;
+	position: absolute;
+	z-index: 1500;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+/*-------------------- Main Styles --------------------*/
+.py-group-color .py-container {
+	background: #de423a;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+.py-main-title {
+	margin: 15px 0;
+	font-size: 1.8em;
+	font-family: 'Pacifico', cursive;
+	font-weight: 100;
+}
+.py-column-title {
+	font-size: 1.3em;
+}
+.py-main-about-description .py-column:nth-child(2) {
+	padding: 10px;
+}
+.py-btn {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 120px;
+	background: #de423a;
+	color: white;
+	padding: 10px;
+	margin: 10px auto;
+}
+.py-btn:hover {
+  background: #dc6660;
+}
+.py-group-title {
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	font-weight: 100;
+	font-size: 1.8em;
+	margin: 30px;
+}
+.py-today-special .py-column {
+	margin-bottom: 30px;
+	text-align: center;
+}
+.py-today-special-img {
+	margin: auto;
+	max-width: 350px;
+}
+.py-today-special-title {
+	font-size: 1.3em;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.py-today-special-price {
+	font-size: 1.5em;
+	color: #de423a;
+	font-weight: bold;
+}
+
+.py-contact-information> a {
+  background-color: #777;
+}
+
+/*--------------------- Footer Styles ---------------------*/
+.py-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+.py-column-grid {
+  position: relative;
+}
+.py-main-footer {
+	background: #222;
+	color: white;
+	padding: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: .8em;
+	height: 270px;
+  position: relative;
+}
+.py-main-footer [class*="py-icon-"] {
+  position: absolute;
+  top: 3px;
+  left: -15px;
+  color: white;
+  text-decoration: none;
+}
+.py-footer-container {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.py-column-title {
+  padding-left: 4px;
+}
+.py-column-txt {
+  font-size: 11.5px;
+}
+.py-column-txt-f {
+  position: absolute;
+  top: 40px;
+  left: 15%;
+  transform: translateX(-10%);
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+.py-column-txt-x {
+  position: absolute;
+  top: 70px;
+  left: 17%;
+  transform: translateX(-11%);
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+.py-column-txt-y {
+  position: absolute;
+  top: 100px;
+  left: 17%;
+  transform: translateX(-10%);
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+.py-copy {
+  position: absolute;
+  width: 80%;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%); 
+	text-align: center;
+  background: #222;
+}
+.py-color-span {
+  color: #ff2e23;
+}
+
+/*--------------------- Responsive Styles ---------------------*/
+@media screen and (min-width: 480px){
+	.py-main-header-contactInfo {
+		text-align: right;
+	}
+	.py-main-header-contactInfo-phone {
+		background: none;
+	}
+	.py-main-header-contactInfo-address {
+		color: white;
+	}
+	.py-main-nav {
+		background: rgba(0,0,0,0.60);
+	}
+  .py-social-icon {
+    margin-right: 15px;
+  }
+	
+	.py-banner {
+		margin-top: -160px;
+		z-index: -1000;
+	}
+	.py-banner-img {
+		height: 600px;
+	}
+
+	.py-main {
+		padding-bottom: 15px;
+	}
+	.py-main-about-description .py-column:nth-child(2) {
+		padding-left: 20px;
+		font-size: .9em;
+	}
+	.py-main-about-description .py-btn {
+		margin: 0;
+	}
+	
+	.py-today-special .py-column {
+		border: 5px solid #ddd;
+		padding: 5px;
+	}
+	.py-today-special-img {
+		height: 200px;
+		object-fit: cover;
+	}
+
+	.py-main-footer .py-container-flex {
+		align-items: flex-start;
+	}
+	.py-column-50 {
+		width: 46%;
+	}
+	.py-column-50-25 {
+		width: 45%;
+	}
+	.py-column-33 {
+		width: 32%;
+	}
+  .py-column-txt {
+    padding: 0 5%;
+    line-height: 1.5em;
+  }
+  .py-column-title {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .py-banner-content {
+		font-size: 3em;
+	}
+	.py-main-title {
+		font-size: 2.2em;
+	}
+	.py-main-about-description {
+		margin-top: 30px;
+	}
+	.py-main-about-description .py-column-50:nth-child(2) {
+		font-size: 1em;
+	}
+	.py-main-about-description .py-column-50:nth-child(2) .py-column-txt {
+		line-height: 30px;
+	}
+	.py-column-50-25 {
+		width: 22%;
+	}
+	
+	.py-group-title {
+		font-size: 2.2em;
+	}
+  .py-footer-container {
+    width: 80%;
+  }
+  .py-column-title {
+		font-size: 1.3em;
+	}
+  .py-column-txt {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+	.py-container {
+		width: 1000px;
+	}
+	.py-logo {
+		font-size: 2em;
+		padding: 0;
+	}
+	.py-main-header-contactInfo-phone, .py-main-header-contactInfo-address {
+		padding: 5px;
+		font-size: 1.15em;
+	}
+	.py-main-nav {
+		padding: 0;
+	}
+	.py-banner-img {
+		height: 800px;
+	}
+	.py-icon-menu {
+		display: none;
+	}
+	.py-menu { 
+		position: static;
+		display: flex;
+		height: auto;
+		width: auto;
+	}
+	.py-menu-link {
+		padding: 20px;
+	}
+	.py-group-color .py-container {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding: 20px;
+	}
+	.py-main-title {
+		font-size: 2.5em;
+	}
+	.py-main-about-description .py-column-50:nth-child(2) .py-column-title {
+		font-size: 1.5em;
+	}
+	.py-main-about-description .py-column-50:nth-child(2) .py-column-txt {
+		line-height: 45px;
+	}
+	.today-special-title {
+		font-size: 1.4em;
+	}
+	.today-special-price {
+		font-size: 1.8em;
+	}
+	.py-main-footer {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.py-main-footer .py-column-title {
+		font-size: 1.3em
+	}
+  .py-footer-container {
+    width: 60%;
+  }
+  .py-column-title {
+    width: 80%;
+    padding-left: 10px;
+  }
+  .py-column-txt {
+    font-size: 1.1em;
+    line-height: 1.6em;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+	.py-container {
+		width: 1400px;
+	}
+	.py-banner-img {
+		height: 900px;
+	}
+	.py-main-about-description .py-column:nth-child(1) img {
+		width: 100%;
+		height: 350px;
+		object-fit: cover;
+	}
+	.py-today-special-img {
+		height: 300px;
+	}
+}
