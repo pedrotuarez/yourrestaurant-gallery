@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/yourrestaurant-gallery/static/css/main.30ea168d.css",
+    "main.js": "/yourrestaurant-gallery/static/js/main.9b0f6cf3.js",
+    "static/js/453.1c398eba.chunk.js": "/yourrestaurant-gallery/static/js/453.1c398eba.chunk.js",
+    "static/media/Pacifico-Regular.ttf": "/yourrestaurant-gallery/static/media/Pacifico-Regular.93cd59fff879b8bdd57d.ttf",
+    "static/media/Montserrat-Regular.ttf": "/yourrestaurant-gallery/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Montserrat-Bold.ttf": "/yourrestaurant-gallery/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
+    "static/media/banneryr3.jpg": "/yourrestaurant-gallery/static/media/banneryr3.ead415a7c69a2ce20d91.jpg",
+    "static/media/fa-brands-400.woff2": "/yourrestaurant-gallery/static/media/fa-brands-400.6563814eb8bcc493b26b.woff2",
+    "static/media/fa-solid-900.woff2": "/yourrestaurant-gallery/static/media/fa-solid-900.ea995b6e6d0be9cd4319.woff2",
+    "static/media/gl3.jpg": "/yourrestaurant-gallery/static/media/gl3.2a58724571163605543b.jpg",
+    "static/media/gl1.jpg": "/yourrestaurant-gallery/static/media/gl1.4081cb45e1110ebe1184.jpg",
+    "static/media/gl4.jpg": "/yourrestaurant-gallery/static/media/gl4.d882bdfaf1a422246e8d.jpg",
+    "static/media/gn4.jpg": "/yourrestaurant-gallery/static/media/gn4.2df4222061e3529c939c.jpg",
+    "static/media/gn2.jpg": "/yourrestaurant-gallery/static/media/gn2.5de519c9c248daa3dac1.jpg",
+    "static/media/gn3.jpg": "/yourrestaurant-gallery/static/media/gn3.94c5abfdfc7bfa964824.jpg",
+    "static/media/gl2.jpg": "/yourrestaurant-gallery/static/media/gl2.553d6611a6066a9c8a4b.jpg",
+    "static/media/fa-regular-400.woff2": "/yourrestaurant-gallery/static/media/fa-regular-400.4e988e05601bf81ee2b0.woff2",
+    "static/media/gn1.jpg": "/yourrestaurant-gallery/static/media/gn1.a90d33ad376594da2640.jpg",
+    "index.html": "/yourrestaurant-gallery/index.html",
+    "main.30ea168d.css.map": "/yourrestaurant-gallery/static/css/main.30ea168d.css.map",
+    "main.9b0f6cf3.js.map": "/yourrestaurant-gallery/static/js/main.9b0f6cf3.js.map",
+    "453.1c398eba.chunk.js.map": "/yourrestaurant-gallery/static/js/453.1c398eba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30ea168d.css",
+    "static/js/main.9b0f6cf3.js"
+  ]
+}
